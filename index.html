@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@700&family=Josefin+Sans&display=swap" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+        <title>Serie de videojuegos Resident Evil</title>
+        <style>
+            body {
+                font-family: "Josefin Sans", sans-serif;
+            }
+            nav {
+                position: relative;
+                display: flex;
+            }
+            p {
+                font-family: "Josefin Sans", sans-serif;
+                font-size: 20px;
+            }
+            .contnav {
+                background-color: #1c045e;
+                color: #f2f2f2;
+            }
+            .overlay {
+                font-family: "Expletus Sans", cursive;
+                position: absolute;
+                z-index: 12;
+                color: #fff;
+                left: 50%;
+                padding-top: 20%;
+                text-shadow: 2px 2px 5px black;
+            }
+            h1 {
+                font-size: 5rem;
+            }
+            h2 {
+                font-family: "Expletus Sans", cursive;
+                font-size: 40px;
+            }
+            h3 {
+                font-family: "Josefin Sans", sans-serif;
+            }
+            h4 {
+                font-family: "Josefin Sans", sans-serif;
+                font-size: 30px;
+            }
+            .uno {
+                background-color: #f2f2f2;
+            }
+            .im {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .fondo-claro {
+                background-color: #f2f2f2;
+            }
+            .accordion-button:not(.collapsed) {
+                background: #cfaba9;
+                color: #410a21;
+                font-weight: 600;
+            }
+            .en-fondo-negro {
+                color: #f2f2f2;
+                background-color: #070233;
+            }
+            .nav-pills .nav-link.active,
+            .nav-pills .show > .nav-link {
+                color: #f2f2f2;
+                background-color: #170436;
+            }
+            a.nav-link {
+                color: #f2f2f2;
+            }
+            span.fs-4 {
+                color: #f2f2f2;
+            }
+            a.nav-link:hover {
+                color: #110242;
+            }
+            footer {
+                background-color: #070233;
+                color: #f2f2f2;
+                padding-top: 3%;
+                padding-bottom: 3%;
+            }
+            p.fo {
+                font-size: 15px;
+            }
+            a {
+                text-decoration: none;
+                color: #f2f2f2;
+            }
+            a:hover {
+                color: #110242;
+            }
+            @media (max-width: 700px) {
+                h1 {
+                    font-size: 25px;
+                }
+                h3 {
+                    font-size: 15px;
+                }
+                h2 {
+                    font-size: 30px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <div class="sticky-top contnav">
+            <nav class="container d-flex flex-wrap justify-content-center py-3">
+                <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #f2f2f2;"></svg>
+                    <span class="fs-4"> Inicio</span>
+                </a>
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Juegos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <header>
+            <div class="container-fluid g-0">
+                <div class="overlay">
+                    <div style="position: relative; left: -50%;">
+                        <h1 class="text-center">Resident Evil últimos juegos</h1>
+                        <h3 class="text-center">Saga de videojuegos Resident Evil</h3>
+                    </div>
+                </div>
+                <div id="probandoCarrusel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/r1.jpeg" class="d-block w-100" alt="Resident Evil" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/r2.jpeg" class="d-block w-100" alt="Resident Evil 2 Remake" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/r3.jpeg" class="d-block w-100" alt="Resident Evil 3 Remake" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/r0.jpeg" class="d-block w-100" alt="Resident Evil Zero" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/rv.webp" class="d-block w-100" alt="Resident Evil Code Veronica" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/r4.jpeg" class="d-block w-100" alt="Resident Evil 4" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/rv1.webp" class="d-block w-100" alt="Resident Evil Revelations" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/rv2.jpeg" class="d-block w-100" alt="Resident Evil Revelations 2" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/r6.jpeg" class="d-block w-100" alt="Resident Evil 6" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/r7.jpeg" class="d-block w-100" alt="Resident Evil 7" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/r8.png" class="d-block w-100" alt="Resident Evil Village" />
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#probandoCarrusel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#probandoCarrusel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div class="uno">
+            <div class="container py-4" id="1">
+                <div class="container p-5">
+                    <h2>Capcom y la Saga de juegos Resident Evil</h2>
+                    <p>
+                        En 1996 Capcom decidió dar un paso adelante y llevar a los monstruos siempre hambrientos a la industria del videojuego con el foco principal de interés para todos con un videojuego que mezclara la acción, la
+                        exploración y el constante miedo a no saber qué clase de criaturas esperarían al final del pasillo a los protagonistas. Así se dio a conocer a una criatura de oscuras intenciones, y su nombre sería bendecido con el
+                        nombre de 'Resident Evil'. Conocido como 'Biohazard' en Japón, la franquicia se estrenó como un survival horror que centraba su experiencia en el factor del miedo y lo desconocido. Los protagonistas debían explorar
+                        en sus entregas diferentes instalaciones con puzles y misterios a su alrededor, desde mansiones en mitad de un siniestro bosque hasta comisarías de policía en una ciudad donde las siniestras criaturas se han hecho
+                        con el control de las calles.
+                    </p>
+
+                    <p>Esta saga consta de 11 diferentes Juegos los cuales son los siguientes:</p>
+                    <p>Resident Evil</p>
+                    <p>Resident Evil 2 y remake</p>
+                    <p>Resident Evil 3 y Remake</p>
+                    <p>Resident Evil Zero</p>
+                    <p>Resident Evil 4</p>
+                    <p>Resident Evil Revelations</p>
+                    <p>Resident Evil Revelations 2</p>
+                    <p>Resident Evil 6</p>
+                    <p>Resident Evil 7</p>
+                    <p>Resident Evil 8 Village</p>
+                    <h2 class="text-end"><strong>Resident Evil 7</strong></h2>
+                </div>
+                <div class="row align-items-md-stretch">
+                    <div class="col-md-6">
+                        <div class="h-100 p-5">
+                            <p>
+                                Resident Evil 7: Biohazard, también estilizado como RESIDENT EVII. Biohazard, conocido en Japón como BIOHA7.ARD Resident Evil (バイオハザード7　レジデント イービル Baiohazādo 7 rejidento ībiru?), es un juego
+                                de terror psicológico en primera persona producido por Capcom. Fue anunciado oficialmente durante la convención de la E3 de 2016. Su fecha de lanzamiento fue el 24 de enero de 2017 para las plataformas
+                                PlayStation 4, Xbox One y Microsoft Windows, además de una versión de PS4 con soporte para PlayStation VR.<br />
+                                <br />
+
+                                El 24 de mayo de 2018 fue lanzado de forma exclusiva en Japón para la Nintendo Switch por medio de streaming en la nube. El 1 de abril de 2021 fue lanzado para Google Stadia. El 13 de junio de 2022 fue
+                                lanzado para PlayStation 5 y Xbox Series X/S con importantes mejoras de última generación como Ray Tracing, mejoras de audio 3D y tiempos de carga reducidos.
+                            </p>
+                            <p>
+                                <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                    Más info
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="h-100 p-5">
+                            <img src="img/resident7.jpeg" class="im" style="width: 80%;" alt="Carátula videojuego nier gestalt para ps3" />
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body" style="padding: 0%;">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Historia
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Ambientado en el Estados Unidos rural moderno y continuando la historia de los dramáticos sucesos de Resident Evil® 6, los jugadores experimentarán el terror directamente desde la perspectiva en
+                                        primera persona. Resident Evil 7 encarna los elementos distintivos de la serie de exploración y atmósfera tensa con los que se acuñó el género de “terror de supervivencia” hace ya veinte años. Ahora,
+                                        una completa actualización del sistema de juego lleva la experiencia del terror de supervivencia al siguiente nivel. Este es un juego de survival-horror en el que los jugadores asumen el papel de
+                                        Ethan, un hombre en busca de su esposa desaparecida en una mansión abandonada. Desde una perspectiva en primera persona con arma de fuego realista, gritos de dolor, y exagerados efectos de la
+                                        salpicadura de sangre. A medida que los jugadores avanzan a través de la historia, escenas pueden representar casos de actos de gore e intensa de violencia: el brazo de un personaje desmembrado por
+                                        una motosierra; pierna de un hombre cortado por la rodilla con una pala; un personaje empalado a través de la cara con una pala. Algunas áreas también muestran cuerpos mutilados que expuesta
+                                        órganos/vísceras.
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Personajes
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                                                <div class="col">
+                                                    <div class="card shadow-sm">
+                                                        <img src="img/ethan.jpeg" style="width: 100%;" alt="Se muestra el aspecto de Ethan Winters el personaje principal" />
+                                                        <div class="card-body">
+                                                            <p class="text-center"><strong>Jugador/Protagonista</strong></p>
+                                                            <div class="d-flex justify-content-between align-items-center"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card shadow-sm">
+                                                        <img src="img/mia.jpeg" style="width: 100%;" alt="Se muestra el aspecto de Mia Winters" />
+                                                        <div class="card-body">
+                                                            <p class="text-center"><strong>Mia Winters</strong></p>
+                                                            <div class="d-flex justify-content-between align-items-center"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card shadow-sm">
+                                                        <img src="img/jack.webp" style="width: 100%;" alt="Se muestra el aspecto de Jack Baker" />
+                                                        <div class="card-body">
+                                                            <p class="text-center"><strong>Jack Baker</strong></p>
+                                                            <div class="d-flex justify-content-between align-items-center"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card shadow-sm">
+                                                        <img src="img/marguerite.png" style="width: 100%;" alt="Se muestra el aspecto de Marguerite Baker" />
+                                                        <div class="card-body">
+                                                            <p class="text-center"><strong>Marguerite Baker</strong></p>
+                                                            <div class="d-flex justify-content-between align-items-center"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card shadow-sm">
+                                                        <img src="img/lucas.webp" style="width: 100%;" alt="Se muestra el aspecto del personaje Lucas Baker" />
+                                                        <div class="card-body">
+                                                            <p class="text-center"><strong>Lucas Baker</strong></p>
+                                                            <div class="d-flex justify-content-between align-items-center"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card shadow-sm">
+                                                        <img src="img/eveline.jpeg" style="width: 100%;" alt="Se muestra al aspecto de Eveline" />
+                                                        <div class="card-body">
+                                                            <p class="text-center"><strong> Eveline</strong></p>
+                                                            <div class="d-flex justify-content-between align-items-center"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid g-0">
+            <img src="img/casa7.jpeg" style="width: 100%;" alt="Imagen intermedia donde se muestra una escena que muestra el inicio del juego y la casa principal" />
+        </div>
+        <div class="dos en-fondo-negro">
+            <div class="container py-4" id="2">
+                <div class="container p-5">
+                    <h2 class="text-start"><strong>Resident Evil 8 Village</strong></h2>
+                </div>
+                <div class="row align-items-md-stretch">
+                    <div class="col-md-6">
+                        <div class="h-100 p-5">
+                            <img src="img/village.webp" class="im" style="width: 80%;" alt="Resident 8 Village" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="h-100 p-5">
+                            <p>
+                                Resident Evil: Village, popularmente llamado Resident Evil 8: Village, también estilizado como RESIDENT EVIL VII.AGE, conocido en Japón como BIOHAZARD VII.AGE (バイオハザード　ヴィレッジ baiohazādo virejji?),
+                                es la octava entrega numerada de la saga Resident Evil, es un juego de survival horror en primera persona el cual fue desarrollado por Capcom y lanzado el 7 de mayo de 2021 y el 8 de mayo de 2021 en Japón.
+                                Fue lanzado para PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S, PC a través de Steam y Google Stadia.
+                            </p>
+                            <p>
+                                <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                    Más info
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body" style="padding: 0%;">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Historia
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="color: #0d000d;">
+                                    <div class="accordion-body">
+                                        La historia se desarrolla en una región montañosa aislada alrededor de un pueblo y un castillo medieval en Europa del Este. Ethan y Mia Winters siguieron juntos después de los eventos de Resident Evil
+                                        7: Biohazard e intentaron seguir con sus vidas tres años después del incidente en Dulvey. Durante los eventos del juego, la hija de los Winters, Rosemary, es secuestrada por unos individuos, lo que
+                                        obliga a Ethan a viajar al pueblo, un lugar donde ocurren extraños sucesos por la región con la aparición de extrañas criaturas y el control del castillo por la familia Dimitrescu quienes tienen
+                                        extrañas habilidades, viéndose también las caras con un viejo amigo del incidente de Dulvey, Chris Redfield. Esta nueva historia empieza con Ethan Winters y su mujer Mia viviendo en paz en un nuevo
+                                        lugar, libres de las pesadillas del pasado. Pero, en el mismo momento en que empiezan a construir su nueva vida juntos, la tragedia se cierne de nuevo sobre ellos. Cuando su casa se ve atacada por
+                                        Chris Redfield, el capitán de la BSAA, Ethan debe adentrarse en los infiernos una vez más para traer de vuelta a su hija secuestrada.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Personajes
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" style="color: #0d000d;">
+                                    <div class="accordion-body">
+                                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                                            <div class="col">
+                                                <div class="card shadow-sm">
+                                                    <img src="img/ethanv2.jpeg" style="width: 100%;" alt="Se muestra al protagonista Ethan" />
+                                                    <div class="card-body">
+                                                        <p class="text-center"><strong>Ethan Winters</strong></p>
+                                                        <div class="d-flex justify-content-between align-items-center"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card shadow-sm">
+                                                    <img src="img/dimitrescu.jpeg" style="width: 100%;" alt="Se muestra al personaje Dimitrescu" />
+                                                    <div class="card-body">
+                                                        <p class="text-center"><strong>Alcina Dimitrescu</strong></p>
+                                                        <div class="d-flex justify-content-between align-items-center"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card shadow-sm">
+                                                    <img src="img/miranda.jpeg" style="width: 100%;" alt="Se muestra el aspecto del Miranda" />
+                                                    <div class="card-body">
+                                                        <p class="text-center"><strong>Miranda</strong></p>
+                                                        <div class="d-flex justify-content-between align-items-center"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card shadow-sm">
+                                                    <img src="img/donna.jpeg" style="width: 100%;" alt="Se muestra la apariencia de Donna Y Angie" />
+                                                    <div class="card-body">
+                                                        <p class="text-center"><strong>Donna Beneviento y Angie</strong></p>
+                                                        <div class="d-flex justify-content-between align-items-center"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card shadow-sm">
+                                                    <img src="img/karl.jpeg" style="width: 100%;" alt="Se muestra la apariencia de Karl" />
+                                                    <div class="card-body">
+                                                        <p class="text-center"><strong>Karl Heisenberg</strong></p>
+                                                        <div class="d-flex justify-content-between align-items-center"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card shadow-sm">
+                                                    <img src="img/salvatore.jpeg" style="width: 100%;" alt="Se muestra la apariencia de Salvatore" />
+                                                    <div class="card-body">
+                                                        <p class="text-center"><strong>Salvatore Moreau</strong></p>
+                                                        <div class="d-flex justify-content-between align-items-center"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid g-0">
+            <img src="img/village2.webp" style="width: 100%;" alt="Segunda imagen intermedia que muestra una escena del trailer de Resident Evil Village" />
+        </div>
+        <div class="tres">
+            <div class="container py-4" id="3">
+                <div class="container p-5">
+                    <h2 class="text-end"><strong>Resident Evil 3 Remake</strong></h2>
+                </div>
+                <div class="row align-items-md-stretch">
+                    <div class="col-md-6">
+                        <div class="h-100 p-5">
+                            <p>
+                                Resident Evil 3, también estilizado como RESIDENT EVIL 3, conocido en Japón como BIOHAZARD RE:3 (バイオハザード RE:3 Baiohazādo RE:3?), es la versión remake del Resident Evil 3: Nemesis lanzado originalmente
+                                en 1999. Este título fue lanzado oficialmente el 3 de abril de 2020 para PlayStation 4, Xbox One y PC. El 13 de junio de 2022 fue lanzado para PlayStation 5 y Xbox Series X/S con importantes mejoras de última
+                                generación como Ray Tracing, mejoras de audio 3D y tiempos de carga reducidos.
+                            </p>
+                            <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                Más info
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="h-100 p-5">
+                            <img src="img/portadanemesis.jpeg" class="im" style="width: 80%;" alt="Resident Evil 3 Remake" />
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body" style="padding: 0%;">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Historia
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Raccoon City es una metrópolis industrial situada en el Medio Oeste de los Estados Unidos. Jill Valentine, miembro de S.T.A.R.S., ha estado investigando de manera independiente, tratando de descubrir
+                                        la verdad oculta tras un fatal incidente. Lo que no sabe, es la pesadilla que se cierne sobre ella. Una serie de extrañas desapariciones han estado ocurriendo en la región medio-oeste de los Estados
+                                        Unidos, en un lugar llamado Raccoon City. Un escuadrón especial de las fuerzas de policía conocido como S.T.A.R.S. ha estado investigando el caso, y han determinado que la compañía farmacéutica
+                                        Umbrella y su arma biológica, el virus T, son responsables de estos incidentes. Tras perder a varios miembros durante la investigación, Jill Valentine y el resto de miembros supervivientes de
+                                        S.T.A.R.S. siguen tratando de sacar a la luz la verdad, pero se encuentran con que el mismo departamento de policía está bajo la influencia de Umbrella, y por ello sus informes son descartados sin que
+                                        puedan hacer nada al respecto. Sin embargo, noticias de un inquietante "virus caníbal" empiezan a surgir, y perros monstruosos comienzan a rondar las calles. Con la plaga vírica extendiéndose por la
+                                        ciudad hasta su mismo apartamento, Jill no tiene más remedio que luchar por sobrevivir. Sin embargo, no sabe que una poderosa unidad enemiga ya ha sido desplegada para matarla.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Personajes
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                                            <div class="col">
+                                                <div class="card shadow-sm">
+                                                    <img src="img/jill2.jpeg" style="width: 100%;" alt="Se muestra la apariendia del personaje 2B" />
+                                                    <div class="card-body">
+                                                        <p class="text-center"><strong>Jill Valentine</strong></p>
+                                                        <div class="d-flex justify-content-between align-items-center"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card shadow-sm">
+                                                    <img src="img/carlos2.jpeg" style="width: 100%;" alt="Se muestra la apariendia del personaje 9S" />
+                                                    <div class="card-body">
+                                                        <p class="text-center"><strong>Carlos Oliveira</strong></p>
+                                                        <div class="d-flex justify-content-between align-items-center"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card shadow-sm">
+                                                    <img src="img/nicholai2.jpeg" style="width: 100%;" alt="Se muestra la apariendia del personaje A2" />
+                                                    <div class="card-body">
+                                                        <p class="text-center"><strong>Nicholai Ginovaef</strong></p>
+                                                        <div class="d-flex justify-content-between align-items-center"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card shadow-sm">
+                                                    <img src="img/dario.jpeg" style="width: 100%;" alt="Se muestra la apariencia de Dario Rosso" />
+                                                    <div class="card-body">
+                                                        <p class="text-center"><strong>Dario Rosso</strong></p>
+                                                        <div class="d-flex justify-content-between align-items-center"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card shadow-sm">
+                                                    <img src="img/nemesis2.jpeg" style="width: 100%;" alt="Se muestra la apariendia del personaje Nemesis" />
+                                                    <div class="card-body">
+                                                        <p class="text-center"><strong>Nemesis</strong></p>
+                                                        <div class="d-flex justify-content-between align-items-center"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card shadow-sm">
+                                                    <img src="img/mikhail2.webp" style="width: 100%;" alt="Se muestra la apariendia del personaje Mikhail Victor" />
+                                                    <div class="card-body">
+                                                        <p class="text-center"><strong>Mikhail Victor</strong></p>
+                                                        <div class="d-flex justify-content-between align-items-center"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid g-0">
+            <img src="img/header3.jpeg" style="width: 100%;" alt="Segunda imagen intermedia que muestra al personaje Jill y Nemesis" />
+        </div>
+        <div class="cuatro">
+            <div class="container py-4" id="3">
+                <div class="container p-5">
+                    <h2 class="text-end"><strong>Resident Evil 2 Remake</strong></h2>
+                </div>
+                <div class="row align-items-md-stretch">
+                    <div class="col-md-6">
+                        <div class="h-100 p-5">
+                            <p>
+                                Resident Evil 2, también estilizado como RESIDENT EVIL 2, conocido en Japón como BIOHAZARD RE:2 (バイオハザード RE:2 Baiohazādo RE:2?), es el remake del videojuego Resident Evil 2 de 1998, desarrollado por
+                                Capcom, el cual fue lanzado el 25 de enero de 2019 para PlayStation 4, Xbox One y PC. El 13 de junio de 2022 fue lanzado para PlayStation 5 y Xbox Series X/S con importantes mejoras de última generación como
+                                Ray Tracing, mejoras de audio 3D y tiempos de carga reducidos.
+                            </p>
+                            <p>
+                                <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                    Más info
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="h-100 p-5">
+                            <img src="img/portada2.jpeg" class="im" style="width: 80%;" alt="Resident Evil 2 Remake" />
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body" style="padding: 0%;">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Historia
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        La historia comienza con Leon Scott Kennedy, un oficial de policía recientemente incorporado a la fuerza policial de Raccoon City coincidiendo su llegada a la ciudad con su primer día de trabajo y
+                                        Claire Redfield, una joven que viajó allí para buscar a su hermano Chris Redfield quien desapareció en circunstancias desconocidas. A su llegada a Raccoon, ambos personajes coinciden en una gasolinera
+                                        en donde se ven obligados a colaborar conjuntamente para escapar de los infectados por el virus-T que una vez fueron los habitantes de Raccoon City convertidos en muertos vivientes huyendo en un coche
+                                        policial. Una vez entran a Raccoon City, ambos son embestidos por un camión que transportaba combustible cuyo conductor fue infectado con el virus lo que causa que ambos jóvenes se separen por el
+                                        fuego y los zombies prometiendo reencontrarse dentro de la comisaría de policía.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Personajes
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                                            <div class="col">
+                                                <div class="card shadow-sm">
+                                                    <img src="img/claire.webp" style="width: 100%;" alt="Se muestra la apariendia del personaje Claire" />
+                                                    <div class="card-body">
+                                                        <p class="text-center"><strong>Claire Redfield</strong></p>
+                                                        <div class="d-flex justify-content-between align-items-center"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card shadow-sm">
+                                                    <img src="img/leon.jpeg" style="width: 100%;" alt="Se muestra la apariendia del personaje Leon" />
+                                                    <div class="card-body">
+                                                        <p class="text-center"><strong>Leon S. Kennedy</strong></p>
+                                                        <div class="d-flex justify-content-between align-items-center"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card shadow-sm">
+                                                    <img src="img/ada.webp" style="width: 100%;" alt="Se muestra la apariendia del personaje Ada" />
+                                                    <div class="card-body">
+                                                        <p class="text-center"><strong>Ada Wong</strong></p>
+                                                        <div class="d-flex justify-content-between align-items-center"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card shadow-sm">
+                                                    <img src="img/sherry.png" style="width: 100%;" alt="Se muestra la apariencia de Sherry" />
+                                                    <div class="card-body">
+                                                        <p class="text-center"><strong>Sherry Birkin</strong></p>
+                                                        <div class="d-flex justify-content-between align-items-center"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card shadow-sm">
+                                                    <img src="img/tyrant.webp" style="width: 100%;" alt="Se muestra la apariendia del personaje Tyrant" />
+                                                    <div class="card-body">
+                                                        <p class="text-center"><strong>Tyrant</strong></p>
+                                                        <div class="d-flex justify-content-between align-items-center"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card shadow-sm">
+                                                    <img src="img/william.jpeg" style="width: 100%;" alt="Se muestra la apariendia del personaje Willian" />
+                                                    <div class="card-body">
+                                                        <p class="text-center"><strong>William Birkin</strong></p>
+                                                        <div class="d-flex justify-content-between align-items-center"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid g-0">
+            <img src="img/escena2.jpeg" style="width: 100%;" alt="Segunda imagen intermedia que muestra al personaje Tirant y Claire" />
+        </div>
+        <section class="container" id="antecedentes">
+            <div class="row">
+                <div class="col-12 pt-3 pb-5">
+                    <h2 class="text-center mt-5 mb-4">Para saber mas sobre estos juegos entra aquí</h2>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 pb-3">
+                        <div class="col mb-3">
+                            <div class="card h-100 shadow-sm">
+                                <img src="img/antecedente2.webp" class="card-img-top" alt="Resident Evil 2" />
+                                <div class="card-body">
+                                    <h6 class="card-title">Remake Resident Evil 2</h6>
+                                    <p class="card-text small"><a href="https://www.residentevil2.com/us/about.php" class="stretched-link">Conoce más &rarr;</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card h-100 shadow-sm">
+                                <img src="img/antecedente1.png" class="card-img-top" alt="Resident Evil 7" />
+                                <div class="card-body">
+                                    <h6 class="card-title">Resident Evil 7</h6>
+                                    <p class="card-text small"><a href="https://www.residentevil7.com/us/#_about" class="stretched-link">Conoce más &rarr;</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card h-100 shadow-sm">
+                                <img src="img/antecedente3.jpeg" class="card-img-top" alt="Resident Evil 3" />
+                                <div class="card-body">
+                                    <h6 class="card-title">Resident Evil 3 Remake</h6>
+                                    <p class="card-text small"><a href="https://www.residentevil.com/3/es/" class="stretched-link">Conoce más &rarr;</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card h-100 shadow-sm">
+                                <img src="img/antecedente4.jpeg" class="card-img-top" alt="Resident Evil 8" />
+                                <div class="card-body">
+                                    <h6 class="card-title">Resident Evil 8 Village</h6>
+                                    <p class="card-text small"><a href="https://www.residentevil.com/village/es/" class="stretched-link">Conoce más &rarr;</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="card h-100 shadow-sm">
+                                <img src="img/antecedente5.jpeg" class="card-img-top" alt="Resident Evil 4" />
+                                <div class="card-body">
+                                    <h6 class="card-title">Próximamente Resident Evil 4</h6>
+                                    <p class="card-text small"><a href="https://www.residentevil.com/re4/en-us/" class="stretched-link">Conoce más &rarr;</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col text-center">
+                        <small>
+                            <a href="https://github.com/fab9904" target="_blank">Fabiola Sánchez</a> | 1 de Julio, 2022<br />
+                            Proyecto final <a href="https://github.com/profesorfaco/front-end" target="_blank">Introducción al Desarrollo Front End con HTML, CSS y JavaScript</a> | Universidad de Chile
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
